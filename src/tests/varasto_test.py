@@ -83,7 +83,7 @@ class TestVarasto(unittest.TestCase):
     def test_lisataan_suurempi_kuin_tila(self):
         self.varasto.lisaa_varastoon(100)
 
-        self.assertAlmostEqual(self.varasto.paljonko_mahtuu(), 100)
+        self.assertAlmostEqual(self.varasto.paljonko_mahtuu(), 0)
     
     def test_str_palauttaa_oikeat_maarat(self):
         self.varasto.lisaa_varastoon(8)
